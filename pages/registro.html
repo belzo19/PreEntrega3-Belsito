@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head> <!-- icono en pestaña / boostrap y css linkeados -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shotcut icon" href="../assets/images/ISOLOGO-NEGRO 11.png">
+  <title>Rispetto</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="sesion"> <!--contenedor principal-->
+
+  <main class="w-50 m-auto"> <!-- formulario hecho con boostrap -->
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="../assets/images/ISOLOGO-NEGRO 11.png" alt="" width="110" height="90">
+      <h2>Completa el registro</h2>
+
+
+      <div>
+
+        <form class="needs-validation" novalidate="">
+          <div class="row g-3">
+            <div class="col-lg-6 col-md-12">
+              <label for="firstName" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Nombre requerido
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+              <label for="lastName" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Apellido requerido
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com">
+              <div class="invalid-feedback">
+                ingresa un correo electronico valido
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+              <label for="lastName" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="floatingPassword" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                contraseña requerida
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+              <label for="lastName" class="form-label">Confirmar</label>
+              <input type="password" class="form-control" id="floatingPassword" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                confirmar contraseña
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="address" placeholder="Dirección 1234" required="">
+              <div class="invalid-feedback">
+                ingresa tu dirección
+              </div>
+            </div>
+
+
+
+            <div class="col-lg-6 col-md-12">
+              <label for="country" class="form-label">Provincia</label>
+              <select class="form-select" id="country" required="">
+                <option value="">Selecciona...</option>
+                <option>Buenos Aires</option>
+              </select>
+              <div class="invalid-feedback">
+                selecciona una provincia
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+              <label for="state" class="form-label">Localidad</label>
+              <select class="form-select" id="state" required="">
+                <option value="">Selecciona...</option>
+                <option>CABA</option>
+                <option>GBA</option>
+              </select>
+              <div class="invalid-feedback">
+                selecciona una localidad
+              </div>
+            </div>
+
+
+          </div>
+          <br>
+          <br>
+
+          <button class="btn btn-dark w-100 py-2" type="submit">Finalizar Registro</button>
+          <p class="mt-5 mb-3 text-body-secondary">Copyright © 1992 - 2023 Rispetto</p>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="checkout.js"></script>
+
+</body>
+
+</html>

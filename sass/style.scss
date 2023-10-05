@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+/* VARIABLES */
+/*......................................................................................*/
+
+$negro : black;
+$blanco : white;
+$gris : gray;
+
+/*.......................................................................................*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $blanco; 
+
+    #banner {
+        margin-bottom: .1875rem;
+        width: 100%;
+    }
+
+    h1 {
+        padding: 1.25rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: $blanco;
+    }
+
+    nav {
+        background-color: $negro;
+        color: $blanco;
+        margin: 0;
+        padding: .3125rem;
+    }
+    
+}
+
+a:hover {
+    text-shadow: .0625rem .0625rem .25rem $blanco;
+}
+
+.navegador {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+    font-size: 1.25rem;
+    margin-bottom: .0625rem;
+
+    .nav-bottom {
+        border: .0625rem solid rgba(0, 0, 0, 0.644);
+        padding-left: .625rem;
+        padding-right: .625rem;
+        padding-top: .0625rem;
+        padding-bottom: .0625rem;
+        border-radius: .4375rem;
+        background-color: $blanco;
+        color: $negro;
+        text-shadow: 1px 1px 2px $gris;
+        box-shadow: 0rem 0rem .25rem $blanco;
+    }
+}
+
+@media only screen and (max-width: 37.5rem) {
+    .navegador {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        list-style: none;
+        font-size: 1.25rem;
+        margin-bottom: .0625rem;
+        gap: .3125rem;
+    }
+}
+
+.contenedor_inicio {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    margin-bottom: 3.125rem;
+}
+
+.carousel {
+    margin-top: 1.25rem;
+    width: 31.25rem;
+    justify-content: center;
+    box-shadow: 0rem 0rem .625rem $negro;
+    border: .3125rem solid $negro;
+}
+
+@media only screen and (max-width: 31.25rem) {
+    .carousel {
+        margin-top: 1.25rem;
+        width: 18.75rem;
+        justify-content: center;
+        box-shadow: 0rem 0rem .625rem $negro;
+        border: .3125rem solid $negro;
+    }
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    margin-bottom: 1.5625rem;
+
+    .caja {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: $blanco;
+        background-color: $negro;
+        width: 15.625rem;
+        margin: 1.25rem;
+        box-shadow: 0rem 0rem .625rem $negro;
+        border-top-right-radius: 1.5625rem;
+        border-bottom-left-radius: 1.5625rem;
+    
+        img {
+            margin: .1875rem;
+            border-top-right-radius: 1.25rem;
+        }
+    
+        .text-caja {
+                   margin-top: .625rem;
+        }
+    
+        h2 {
+            font-size: medium;
+        }
+    
+    }
+}
+
+.caja:hover {
+    text-shadow: .0625rem .0625rem .25rem $blanco;
+    box-shadow: .0625rem .0625rem .25rem $blanco;
+}
+
+@media only screen and (max-width: 1100px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+}
+
+#fondoquienes {
+    margin-top: 2.1875rem;
+}
+
+.quienes {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 35%;
+    margin: 0 auto;
+    padding: 1.25rem;
+    font-size: larger;
+    margin-bottom: 3.125rem;
+
+}
+
+@media only screen and (max-width: 1101px) {
+    .quienes {
+        display: grid;
+        grid-template-columns: 100%;
+        width: 50%;
+        margin: 0 auto;
+        padding: 1.25rem;
+        font-size: larger;
+        margin-bottom: 3.125rem;
+    }
+}
+
+@media only screen and (max-width: 851px) {
+    .quienes {
+        display: grid;
+        grid-template-columns: 100%;
+        width: 65%;
+        margin: 0 auto;
+        padding: 1.25rem;
+        font-size: medium;
+        margin-bottom: 3.125rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .quienes {
+        display: grid;
+        grid-template-columns: 100%;
+        width: 80%;
+        margin: 0 auto;
+        padding: 1.25rem;
+        font-size: medium;
+        margin-bottom: 3.125rem;
+    }
+}
+
+.sesion {
+    margin-top: 10vh;
+}
+
+footer {
+    background-color: $negro;
+    color: $blanco;
+    font-size: 1.125rem;
+    margin-bottom: 0;
+    width: 100%;
+
+    img {
+        width: 1.875rem;
+        margin-inline: .625rem;
+        display: block;
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+        border-radius: .1875rem;
+    }
+
+    h4 {
+        border-width: 6.25rem;
+        border: .0625rem solid rgba(0, 0, 0, 0.644);
+        padding-left: .625rem;
+        padding-right: .625rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: $blanco;
+        color: $negro;
+        text-shadow: 1px 1px 2px $gris;
+        box-shadow: 0rem 0rem .25rem $blanco;
+    }
+}
+
+footer div a img:hover {
+    box-shadow: .0625rem .0625rem .25rem $blanco;
+}
+
+.divfooter {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: .625rem;
+    margin: 0;
+    padding: .3125rem;
+
+    .columnasfooter {
+        border: .0625rem solid $blanco;
+        text-align: center;
+        margin: .0625rem;
+    }
+
+    .columnasfooter2 {
+        font-size: small;
+        border: .0625rem solid $blanco;
+        text-align: center;
+        padding: .3125rem;
+        grid-column: 1 / 5;
+    }
+    
+    .iconos-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 37.8125rem) {
+    .divfooter {
+        display: flex;
+        flex-direction: column;
+        gap: .625rem;
+        margin: 0;
+        padding: .3125rem;
+    }
+}
+
