@@ -1,6 +1,7 @@
 {
-  "name": "root01",
+  "name": "preentrega3-belsito-main",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.68.0"
-  },
-  "devDependencies": {},
-  "description": ""
+    "bootstrap": "^5.3.2"
+  }
 }
