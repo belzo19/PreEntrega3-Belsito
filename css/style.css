@@ -8,7 +8,9 @@
 
 /* VARIABLES */
 /*......................................................................................*/
+/*MIXIN*/
 /*.......................................................................................*/
+/*........................................................................................*/
 body {
   display: flex;
   flex-direction: column;
@@ -58,8 +60,7 @@ a:hover {
   text-shadow: 1px 1px 2px gray;
   box-shadow: 0rem 0rem 0.25rem white;
 }
-
-@media only screen and (max-width: 37.5rem) {
+@media only screen and (max-width: 575px) {
   .navegador {
     display: flex;
     flex-direction: column;
@@ -71,6 +72,7 @@ a:hover {
     gap: 0.3125rem;
   }
 }
+
 .contenedor_inicio {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -85,8 +87,7 @@ a:hover {
   box-shadow: 0rem 0rem 0.625rem black;
   border: 0.3125rem solid black;
 }
-
-@media only screen and (max-width: 31.25rem) {
+@media only screen and (max-width: 575px) {
   .carousel {
     margin-top: 1.25rem;
     width: 18.75rem;
@@ -95,6 +96,7 @@ a:hover {
     border: 0.3125rem solid black;
   }
 }
+
 .contenedor {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -123,12 +125,6 @@ a:hover {
 .contenedor .caja h2 {
   font-size: medium;
 }
-
-.caja:hover {
-  text-shadow: 0.0625rem 0.0625rem 0.25rem white;
-  box-shadow: 0.0625rem 0.0625rem 0.25rem white;
-}
-
 @media only screen and (max-width: 1100px) {
   .contenedor {
     display: grid;
@@ -150,6 +146,12 @@ a:hover {
     justify-content: center;
   }
 }
+
+.caja:hover {
+  text-shadow: 0.0625rem 0.0625rem 0.25rem white;
+  box-shadow: 0.0625rem 0.0625rem 0.25rem white;
+}
+
 #fondoquienes {
   margin-top: 2.1875rem;
 }
@@ -163,8 +165,7 @@ a:hover {
   font-size: larger;
   margin-bottom: 3.125rem;
 }
-
-@media only screen and (max-width: 1101px) {
+@media only screen and (max-width: 1100px) {
   .quienes {
     display: grid;
     grid-template-columns: 100%;
@@ -175,7 +176,7 @@ a:hover {
     margin-bottom: 3.125rem;
   }
 }
-@media only screen and (max-width: 851px) {
+@media only screen and (max-width: 850px) {
   .quienes {
     display: grid;
     grid-template-columns: 100%;
@@ -186,7 +187,7 @@ a:hover {
     margin-bottom: 3.125rem;
   }
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
   .quienes {
     display: grid;
     grid-template-columns: 100%;
@@ -197,6 +198,7 @@ a:hover {
     margin-bottom: 3.125rem;
   }
 }
+
 .sesion {
   margin-top: 10vh;
 }
@@ -257,8 +259,7 @@ footer div a img:hover {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-@media only screen and (max-width: 37.8125rem) {
+@media only screen and (max-width: 575px) {
   .divfooter {
     display: flex;
     flex-direction: column;

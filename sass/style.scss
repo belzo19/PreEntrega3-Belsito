@@ -6,44 +6,54 @@
     font-family: 'Quicksand', sans-serif;
     box-sizing: border-box;
 }
+
 /* VARIABLES */
 /*......................................................................................*/
-
 $negro : black;
 $blanco : white;
 $gris : gray;
-
+/*MIXIN*/
 /*.......................................................................................*/
+@mixin escritorio {
+    @media only screen and (max-width: 1100px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media only screen and (max-width: 850px) {
+        @content;
+    }
+}
+@mixin celu {
+    @media only screen and (max-width: 575px) {
+        @content;
+    }
+}
+/*........................................................................................*/
 
 body {
     display: flex;
     flex-direction: column;
     text-align: center;
     background-color: $blanco; 
-
     #banner {
         margin-bottom: .1875rem;
         width: 100%;
     }
-
     h1 {
         padding: 1.25rem;
     }
-
     a {
         text-decoration: none;
         color: $blanco;
     }
-
     nav {
         background-color: $negro;
         color: $blanco;
         margin: 0;
         padding: .3125rem;
     }
-    
 }
-
 a:hover {
     text-shadow: .0625rem .0625rem .25rem $blanco;
 }
@@ -56,7 +66,6 @@ a:hover {
     list-style: none;
     font-size: 1.25rem;
     margin-bottom: .0625rem;
-
     .nav-bottom {
         border: .0625rem solid rgba(0, 0, 0, 0.644);
         padding-left: .625rem;
@@ -69,10 +78,7 @@ a:hover {
         text-shadow: 1px 1px 2px $gris;
         box-shadow: 0rem 0rem .25rem $blanco;
     }
-}
-
-@media only screen and (max-width: 37.5rem) {
-    .navegador {
+    @include celu {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -90,17 +96,13 @@ a:hover {
     justify-content: center;
     margin-bottom: 3.125rem;
 }
-
 .carousel {
     margin-top: 1.25rem;
     width: 31.25rem;
     justify-content: center;
     box-shadow: 0rem 0rem .625rem $negro;
     border: .3125rem solid $negro;
-}
-
-@media only screen and (max-width: 31.25rem) {
-    .carousel {
+    @include celu {
         margin-top: 1.25rem;
         width: 18.75rem;
         justify-content: center;
@@ -114,7 +116,6 @@ a:hover {
     grid-template-columns: auto auto auto auto;
     justify-content: center;
     margin-bottom: 1.5625rem;
-
     .caja {
         display: flex;
         flex-direction: column;
@@ -126,20 +127,31 @@ a:hover {
         box-shadow: 0rem 0rem .625rem $negro;
         border-top-right-radius: 1.5625rem;
         border-bottom-left-radius: 1.5625rem;
-    
-        img {
-            margin: .1875rem;
-            border-top-right-radius: 1.25rem;
-        }
-    
-        .text-caja {
-                   margin-top: .625rem;
-        }
-    
-        h2 {
-            font-size: medium;
-        }
-    
+    img {
+        margin: .1875rem;
+        border-top-right-radius: 1.25rem;
+    }
+    .text-caja {
+        margin-top: .625rem;
+    }
+    h2 {
+        font-size: medium;
+    }
+    }    
+    @include escritorio {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+    }
+    @include tablet {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+    @include celu {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
     }
 }
 
@@ -148,35 +160,9 @@ a:hover {
     box-shadow: .0625rem .0625rem .25rem $blanco;
 }
 
-@media only screen and (max-width: 1100px) {
-    .contenedor {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        justify-content: center;
-    }
-}
-
-@media only screen and (max-width: 850px) {
-    .contenedor {
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: center;
-    }
-}
-
-@media only screen and (max-width: 575px) {
-    .contenedor {
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: center;
-    }
-
-}
-
 #fondoquienes {
     margin-top: 2.1875rem;
 }
-
 .quienes {
     display: grid;
     grid-template-columns: 100%;
@@ -185,11 +171,7 @@ a:hover {
     padding: 1.25rem;
     font-size: larger;
     margin-bottom: 3.125rem;
-
-}
-
-@media only screen and (max-width: 1101px) {
-    .quienes {
+    @include escritorio {
         display: grid;
         grid-template-columns: 100%;
         width: 50%;
@@ -198,10 +180,7 @@ a:hover {
         font-size: larger;
         margin-bottom: 3.125rem;
     }
-}
-
-@media only screen and (max-width: 851px) {
-    .quienes {
+    @include tablet {
         display: grid;
         grid-template-columns: 100%;
         width: 65%;
@@ -210,10 +189,7 @@ a:hover {
         font-size: medium;
         margin-bottom: 3.125rem;
     }
-}
-
-@media only screen and (max-width: 576px) {
-    .quienes {
+    @include celu {
         display: grid;
         grid-template-columns: 100%;
         width: 80%;
@@ -234,7 +210,6 @@ footer {
     font-size: 1.125rem;
     margin-bottom: 0;
     width: 100%;
-
     img {
         width: 1.875rem;
         margin-inline: .625rem;
@@ -243,7 +218,6 @@ footer {
         margin-bottom: 1.25rem;
         border-radius: .1875rem;
     }
-
     h4 {
         border-width: 6.25rem;
         border: .0625rem solid rgba(0, 0, 0, 0.644);
@@ -268,13 +242,11 @@ footer div a img:hover {
     gap: .625rem;
     margin: 0;
     padding: .3125rem;
-
     .columnasfooter {
         border: .0625rem solid $blanco;
         text-align: center;
         margin: .0625rem;
     }
-
     .columnasfooter2 {
         font-size: small;
         border: .0625rem solid $blanco;
@@ -282,16 +254,12 @@ footer div a img:hover {
         padding: .3125rem;
         grid-column: 1 / 5;
     }
-    
     .iconos-footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-}
-
-@media only screen and (max-width: 37.8125rem) {
-    .divfooter {
+    @include celu {
         display: flex;
         flex-direction: column;
         gap: .625rem;
@@ -299,4 +267,5 @@ footer div a img:hover {
         padding: .3125rem;
     }
 }
+
 
