@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import 'variables';
-@import 'mixins';
-@import 'header';
-@import 'footer';
+@import './base/variables';
+@import './base/mixins';
+@import './componentes/header';
+@import './componentes/footer';
 
 * {
     margin: 0rem;

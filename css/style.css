@@ -11904,6 +11904,9 @@ footer img {
   margin-bottom: 1.25rem;
   border-radius: 0.1875rem;
 }
+footer a img:hover {
+  box-shadow: 0.0625rem 0.0625rem 0.25rem white;
+}
 footer h4, footer .h4 {
   border-width: 6.25rem;
   border: 0.0625rem solid rgba(0, 0, 0, 0.644);
@@ -11915,10 +11918,6 @@ footer h4, footer .h4 {
   color: black;
   text-shadow: 1px 1px 2px gray;
   box-shadow: 0rem 0rem 0.25rem white;
-}
-
-footer div a img:hover {
-  box-shadow: 0.0625rem 0.0625rem 0.25rem white;
 }
 
 .divfooter {
