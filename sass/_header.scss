@@ -1,0 +1,33 @@
+@import 'variables';
+@import 'mixins';
+
+#banner {
+    margin-bottom: .1875rem;
+    width: 100%;
+}
+
+.navegador {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+    font-size: 1.25rem;
+    margin-bottom: .0625rem;
+    .nav-bottom {
+        border: .0625rem solid rgba(0, 0, 0, 0.644);
+        padding-left: .625rem;
+        padding-right: .625rem;
+        padding-top: .0625rem;
+        padding-bottom: .0625rem;
+        border-radius: .4375rem;
+        background-color: $blanco;
+        color: $negro;
+        text-shadow: 1px 1px 2px $gris;
+        box-shadow: 0rem 0rem .25rem $blanco;
+    }
+    @include celu {
+        flex-direction: column;
+        gap: .3125rem;
+    }
+}

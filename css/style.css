@@ -11856,39 +11856,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-* {
-  margin: 0rem;
-  padding: 0rem;
-  font-family: "Quicksand", sans-serif;
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: white;
-}
-body #banner {
+#banner {
   margin-bottom: 0.1875rem;
   width: 100%;
-}
-body h1, body .h1 {
-  padding: 1.25rem;
-}
-body a {
-  text-decoration: none;
-  color: white;
-}
-body nav {
-  background-color: black;
-  color: white;
-  margin: 0;
-  padding: 0.3125rem;
-}
-
-a:hover {
-  text-shadow: 0.0625rem 0.0625rem 0.25rem white;
 }
 
 .navegador {
@@ -11914,175 +11884,9 @@ a:hover {
 }
 @media only screen and (max-width: 575px) {
   .navegador {
-    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    list-style: none;
-    font-size: 1.25rem;
-    margin-bottom: 0.0625rem;
     gap: 0.3125rem;
   }
-}
-
-.contenedor_inicio {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  justify-content: center;
-  margin-bottom: 3.125rem;
-}
-
-.carousel {
-  margin-top: 1.25rem;
-  width: 31.25rem;
-  justify-content: center;
-  box-shadow: 0rem 0rem 0.625rem black;
-  border: 0.3125rem solid black;
-  animation-name: animado;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-@media only screen and (max-width: 575px) {
-  .carousel {
-    margin-top: 1.25rem;
-    width: 18.75rem;
-    justify-content: center;
-    box-shadow: 0rem 0rem 0.625rem black;
-    border: 0.3125rem solid black;
-    animation-name: animado;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-}
-
-@keyframes animado {
-  0% {
-    box-shadow: 0rem 0rem 0.625rem black;
-    border: 0.3125rem solid white;
-  }
-  25% {
-    box-shadow: 0rem 0rem 2.5rem black;
-    border: 0.3125rem solid gray;
-  }
-  50% {
-    box-shadow: 0rem 0rem 3.75rem black;
-    border: 0.3125rem solid black;
-  }
-  75% {
-    box-shadow: 0rem 0rem 2.5rem black;
-    border: 0.3125rem solid gray;
-  }
-  100% {
-    box-shadow: 0rem 0rem 0.625rem black;
-    border: 0.3125rem solid white;
-  }
-}
-.contenedor {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  justify-content: center;
-  margin-bottom: 1.5625rem;
-}
-.contenedor .caja {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: white;
-  background-color: black;
-  width: 15.625rem;
-  margin: 1.25rem;
-  box-shadow: 0rem 0rem 0.625rem black;
-  border-top-right-radius: 1.5625rem;
-  border-bottom-left-radius: 1.5625rem;
-}
-.contenedor .caja img {
-  margin: 0.1875rem;
-  border-top-right-radius: 1.25rem;
-}
-.contenedor .caja .text-caja {
-  margin-top: 0.625rem;
-}
-.contenedor .caja h2, .contenedor .caja .h2 {
-  font-size: medium;
-}
-@media only screen and (max-width: 1100px) {
-  .contenedor {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-  }
-}
-@media only screen and (max-width: 850px) {
-  .contenedor {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: center;
-  }
-}
-@media only screen and (max-width: 575px) {
-  .contenedor {
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-  }
-}
-
-.caja:hover {
-  text-shadow: 0.0625rem 0.0625rem 0.25rem white;
-  box-shadow: 0.0625rem 0.0625rem 0.25rem white;
-}
-
-#fondoquienes {
-  margin-top: 2.1875rem;
-}
-
-.quienes {
-  display: grid;
-  grid-template-columns: 100%;
-  width: 35%;
-  margin: 0 auto;
-  padding: 1.25rem;
-  font-size: larger;
-  margin-bottom: 3.125rem;
-}
-@media only screen and (max-width: 1100px) {
-  .quienes {
-    display: grid;
-    grid-template-columns: 100%;
-    width: 50%;
-    margin: 0 auto;
-    padding: 1.25rem;
-    font-size: larger;
-    margin-bottom: 3.125rem;
-  }
-}
-@media only screen and (max-width: 850px) {
-  .quienes {
-    display: grid;
-    grid-template-columns: 100%;
-    width: 65%;
-    margin: 0 auto;
-    padding: 1.25rem;
-    font-size: medium;
-    margin-bottom: 3.125rem;
-  }
-}
-@media only screen and (max-width: 575px) {
-  .quienes {
-    display: grid;
-    grid-template-columns: 100%;
-    width: 80%;
-    margin: 0 auto;
-    padding: 1.25rem;
-    font-size: medium;
-    margin-bottom: 3.125rem;
-  }
-}
-
-.sesion {
-  margin-top: 10vh;
 }
 
 footer {
@@ -12145,10 +11949,164 @@ footer div a img:hover {
   .divfooter {
     display: flex;
     flex-direction: column;
-    gap: 0.625rem;
-    margin: 0;
-    padding: 0.3125rem;
   }
+}
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+}
+body h1, body .h1 {
+  padding: 1.25rem;
+}
+body a {
+  text-decoration: none;
+  color: white;
+}
+body a:hover {
+  text-shadow: 0.0625rem 0.0625rem 0.25rem white;
+}
+body nav {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0.3125rem;
+}
+
+.contenedor_inicio {
+  padding-bottom: 1.5625rem;
+}
+
+.carousel {
+  margin-top: 1.25rem;
+  width: 31.25rem;
+  justify-content: center;
+  box-shadow: 0rem 0rem 0.625rem black;
+  border: 0.3125rem solid black;
+  animation-name: animado;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@media only screen and (max-width: 575px) {
+  .carousel {
+    width: 18.75rem;
+  }
+}
+
+@keyframes animado {
+  0% {
+    box-shadow: 0rem 0rem 0.625rem black;
+    border: 0.3125rem solid white;
+  }
+  25% {
+    box-shadow: 0rem 0rem 2.5rem black;
+    border: 0.3125rem solid gray;
+  }
+  50% {
+    box-shadow: 0rem 0rem 3.75rem black;
+    border: 0.3125rem solid black;
+  }
+  75% {
+    box-shadow: 0rem 0rem 2.5rem black;
+    border: 0.3125rem solid gray;
+  }
+  100% {
+    box-shadow: 0rem 0rem 0.625rem black;
+    border: 0.3125rem solid white;
+  }
+}
+.contenedor, .contenedor_inicio {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  margin-bottom: 1.5625rem;
+}
+.contenedor .caja, .contenedor_inicio .caja {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  background-color: black;
+  width: 15.625rem;
+  margin: 1.25rem;
+  box-shadow: 0rem 0rem 0.625rem black;
+  border-top-right-radius: 1.5625rem;
+  border-bottom-left-radius: 1.5625rem;
+}
+.contenedor .caja:hover, .contenedor_inicio .caja:hover {
+  text-shadow: 0.0625rem 0.0625rem 0.25rem white;
+  box-shadow: 0.0625rem 0.0625rem 0.25rem white;
+}
+.contenedor .img-caja, .contenedor_inicio .img-caja {
+  border-top-right-radius: 1.25rem;
+}
+.contenedor .text-caja, .contenedor_inicio .text-caja {
+  color: white;
+  margin-top: 0.625rem;
+}
+.contenedor h2, .contenedor_inicio h2, .contenedor .h2, .contenedor_inicio .h2 {
+  color: white;
+  font-size: medium;
+}
+@media only screen and (max-width: 1100px) {
+  .contenedor, .contenedor_inicio {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .contenedor, .contenedor_inicio {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .contenedor, .contenedor_inicio {
+    grid-template-columns: auto;
+  }
+}
+
+#fondoquienes {
+  margin-top: 2.1875rem;
+}
+
+.quienes {
+  display: grid;
+  grid-template-columns: 100%;
+  width: 35%;
+  margin: 0 auto;
+  padding: 1.25rem;
+  font-size: larger;
+  margin-bottom: 3.125rem;
+}
+@media only screen and (max-width: 1100px) {
+  .quienes {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .quienes {
+    width: 65%;
+    font-size: medium;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .quienes {
+    width: 80%;
+    font-size: medium;
+  }
+}
+
+.sesion {
+  margin-top: 10vh;
 }
 
 /*# sourceMappingURL=style.css.map */
