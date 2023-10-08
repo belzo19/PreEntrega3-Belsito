@@ -16,11 +16,11 @@ footer {
         border-radius: .1875rem;
     }
     a img:hover {
-        box-shadow: .0625rem .0625rem .25rem $blanco;
+        box-shadow: .0625rem .0625rem .25rem $claro;
     }
     h4 {
         border-width: 6.25rem;
-        border: .0625rem solid rgba(0, 0, 0, 0.644);
+        border: .0625rem solid $dark;
         padding-left: .625rem;
         padding-right: .625rem;
         padding-top: 0;
@@ -28,7 +28,7 @@ footer {
         background-color: map-get( $paleta , "blanco" );
         color: map-get( $paleta , "negro" );
         text-shadow: 1px 1px 2px $gris;
-        box-shadow: 0rem 0rem .25rem $blanco;
+        box-shadow: 0rem 0rem .25rem $claro;
     }
 }
 
@@ -39,13 +39,13 @@ footer {
     margin: 0;
     padding: .3125rem;
     .columnasfooter {
-        border: .0625rem solid $blanco;
+        border: .0625rem solid $claro;
         text-align: center;
         margin: .0625rem;
     }
     .columnasfooter2 {
         font-size: small;
-        border: .0625rem solid $blanco;
+        border: .0625rem solid $claro;
         text-align: center;
         padding: .3125rem;
         grid-column: 1 / 5;

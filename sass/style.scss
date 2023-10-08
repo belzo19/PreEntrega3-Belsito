@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import './base/variables';
 @import './base/mixins';
 @import './componentes/header';
 @import './componentes/footer';
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 * {
     margin: 0rem;
@@ -16,20 +16,20 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: $blanco;
+    background-color: $claro;
     h1 {
         padding: 1.25rem;
     }
     a {
         text-decoration: none;
-        color: $blanco;
+        color: $claro;
         &:hover {
-            text-shadow: .0625rem .0625rem .25rem $blanco;
+            text-shadow: .0625rem .0625rem .25rem $claro;
         }
     }
     nav {
-        background-color: $negro;
-        color: $blanco;
+        background-color: $dark;
+        color: $claro;
         margin: 0;
         padding: .3125rem;
     }
@@ -43,8 +43,8 @@ body {
     margin-top: 1.25rem;
     width: 31.25rem;
     justify-content: center;
-    box-shadow: 0rem 0rem .625rem $negro;
-    border: .3125rem solid $negro;
+    box-shadow: 0rem 0rem .625rem $dark;
+    border: .3125rem solid $dark;
     animation-name: animado;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -54,11 +54,11 @@ body {
     }
 }
 @keyframes animado {
-    0% {box-shadow: 0rem 0rem .625rem $negro; border: .3125rem solid $blanco;}
-    25% {box-shadow: 0rem 0rem 2.5rem $negro; border: .3125rem solid $gris;}
-    50% {box-shadow: 0rem 0rem 3.75rem $negro; border: .3125rem solid $negro;}
-    75% {box-shadow: 0rem 0rem 2.5rem $negro; border: .3125rem solid $gris;}
-    100% {box-shadow: 0rem 0rem .625rem $negro; border: .3125rem solid $blanco;}
+    0% {box-shadow: 0rem 0rem .625rem $dark; border: .3125rem solid $claro;}
+    25% {box-shadow: 0rem 0rem 2.5rem $dark; border: .3125rem solid $gris;}
+    50% {box-shadow: 0rem 0rem 3.75rem $dark; border: .3125rem solid $dark;}
+    75% {box-shadow: 0rem 0rem 2.5rem $dark; border: .3125rem solid $gris;}
+    100% {box-shadow: 0rem 0rem .625rem $dark; border: .3125rem solid $claro;}
 }
 
 .contenedor {
@@ -70,27 +70,27 @@ body {
         display: flex;
         flex-direction: column;
         text-align: center;
-        color: $blanco;
-        background-color: $negro;
+        color: $claro;
+        background-color: $dark;
         width: 15.625rem;
         margin: 1.25rem;
-        box-shadow: 0rem 0rem .625rem $negro;
+        box-shadow: 0rem 0rem .625rem $dark;
         border-top-right-radius: 1.5625rem;
         border-bottom-left-radius: 1.5625rem;
         &:hover {
-            text-shadow: .0625rem .0625rem .25rem $blanco;
-            box-shadow: .0625rem .0625rem .25rem $blanco;
+            text-shadow: .0625rem .0625rem .25rem $claro;
+            box-shadow: .0625rem .0625rem .25rem $claro;
         }
     }
     .img-caja {
         border-top-right-radius: 1.25rem;
     }
     .text-caja {
-        color: $blanco;
+        color: $claro;
         margin-top: .625rem;
     }
     h2 {
-        color: $blanco;
+        color: $claro;
         font-size: medium;
     }
     @include escritorio {
