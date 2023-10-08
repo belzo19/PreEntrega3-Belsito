@@ -4,6 +4,17 @@
 #banner {
     margin-bottom: .1875rem;
     width: 100%;
+    @include celu {
+        display: none;
+    }
+}
+
+#logo {
+    @extend #banner;
+    display: none;
+    @include celu {
+        display: unset;
+    }
 }
 
 .navegador {
